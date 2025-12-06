@@ -1,0 +1,710 @@
+import React, { useState, useEffect } from 'react';
+import { Volume2, VolumeX, Award, Target, Book, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const LRGame = () => {
+  const [gameMode, setGameMode] = useState('menu'); // 'menu', 'know', 'play'
+  const [soundEnabled, setSoundEnabled] = useState(true);
+  const [score, setScore] = useState(0);
+  const [total, setTotal] = useState(0);
+  
+  // Game data
+  const [gameData, setGameData] = useState([]);
+  const [drumOptions, setDrumOptions] = useState({
+    recipients: [],
+    types: [],
+    resources: [],
+    sources: []
+  });
+  
+  // Know mode state
+  const [selectedSource, setSelectedSource] = useState(null);
+  const [selectedType, setSelectedType] = useState(null);
+  const [selectedResource, setSelectedResource] = useState(null);
+  const [selectedRecipient, setSelectedRecipient] = useState(null);
+  const [showResult, setShowResult] = useState(false);
+  const [resultBucket, setResultBucket] = useState(null);
+  
+  // Card carousel indices
+  const [sourceIndex, setSourceIndex] = useState(0);
+  const [typeIndex, setTypeIndex] = useState(0);
+  const [resourceIndex, setResourceIndex] = useState(0);
+  const [recipientIndex, setRecipientIndex] = useState(0);
+  
+  // Play mode state
+  const [currentScenario, setCurrentScenario] = useState(null);
+  const [selectedBucket, setSelectedBucket] = useState(null);
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+
+  // CSV data
+  const csvData = `Source,Recipient,type,resource,utilization,Applicable Buckets
+Project Participant,Project Participant,Financial,Cash,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Cheque,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Online Transfer,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Stocks/ Bonds,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Birds Bees,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Cow Buffalo,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Goat Sheep,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Other Animals,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Diary,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Fertilizer Compost Manure,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Seeds Saplings,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Fodder Forrage,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Other farm inputs,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Farm Machinery equipments,Used by recipient,Bucket 1
+Project Participant,Project Participant,Other,Non-Farm Machinery Equipments,Used by recipient,Bucket 1
+Project Participant,Project Participant,Knowledge,Agri related Training,Used by recipient,Bucket 1
+Project Participant,Project Participant,Knowledge,Other skill development,Used by recipient,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Financial,Cash,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,Cow Buffalo,Shared with other FOAB,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Financial,Cash,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,Goat Sheep,Shared with other SHG,Bucket 1
+Individual Donor,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Individual Donor,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Individual Donor,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Individual Donor,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Individual Donor,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Individual Donor,Project Participant,For Free,Land Building,Used by recipient,Bucket 2
+Individual Donor,Project Participant,For Free,Machinery Equipment,Used by recipient,Bucket 2
+Individual Donor,Project Participant,Subsidy,Agri goods services,Used by recipient,Bucket 2
+Local State Govt,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Local State Govt,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Local State Govt,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Local State Govt,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Local State Govt,Project Participant,Subsidy,Agri goods services,Used by recipient,Bucket 2
+Local State Govt,Project Participant,Subsidy,Equipment machinery,Used by recipient,Bucket 2
+Local State Govt,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Local State Govt,Project Supported FOAB,For Free,Machinery Equipment,Used by the FOAB,Bucket 2
+Local State Govt,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Local State Govt,Project Supported SHG,Subsidy,Agri goods services,Used by the SHG,Bucket 2
+NGO,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Machinery Equipment,Used by recipient,Bucket 2
+NGO,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+NGO,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Private Organization,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Private Organization,Project Participant,Subsidy,Equipment machinery,Used by recipient,Bucket 2
+Private Organization,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Heifer assisted SHG,SHG Members,Savings,Cash,Utilized by Members,Bucket 3
+Heifer assisted SHG,SHG Members,Savings,in Bank,Utilized by Members,Bucket 3
+Heifer assisted SHG,Community,Loan,Roads construction,Benefit Community,Bucket 3
+Heifer assisted SHG,Community,Loan,Buildings construction,Benefit Community,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Agriculture loan,Utilized by Members,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Animal rearing loan,Utilized by Members,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Personal loan,Utilized by Members,Bucket 3
+Heifer assisted SHG,Project Supported SHG,Investment,Capital,Used by the SHG,Bucket 3
+Heifer assisted FOAB,FOAB Members,Savings,Cash,Utilized by Members,Bucket 3
+Heifer assisted FOAB,FOAB Members,Savings,Savings account,Utilized by Members,Bucket 3
+Heifer assisted FOAB,Community,Loan,Roads construction,Benefit Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,Buildings construction,Benefit Community,Bucket 3
+Heifer assisted FOAB,FOAB Member,Personal Loan,Agriculture loan,Utilized by Members,Bucket 3
+Heifer assisted FOAB,FOAB Member,Personal Loan,Animal rearing loan,Utilized by Members,Bucket 3
+Heifer assisted FOAB,Project Supported FOAB,Investment,Capital,Used by the FOAB,Bucket 3
+Bank Financial Institution,Community,Loan,Roads construction,Benefit Community,Bucket 4
+Bank Financial Institution,Community,Loan,Buildings construction,Benefit Community,Bucket 4
+Bank Financial Institution,FOAB Member,Personal Loan,Formal Agriculture loan,Utilized by Members,Bucket 4
+Bank Financial Institution,FOAB Member,Personal Loan,Formal Animal loan,Utilized by Members,Bucket 4
+Bank Financial Institution,SHG Member,Personal Loan,Formal Agriculture loan,Utilized by Members,Bucket 4
+Bank Financial Institution,SHG Member,Personal Loan,Formal personal loan,Utilized by Members,Bucket 4
+Heifer assisted FOAB,Bank Financial Institution,Investment,Fixed Deposits,Used by the FOAB,Bucket 4
+Heifer assisted SHG,Bank Financial Institution,Investment,Fixed Deposits,Used by the SHG,Bucket 4`;
+
+  // Parse CSV on mount
+  useEffect(() => {
+    const lines = csvData.trim().split('\n');
+    const data = lines.slice(1).map(line => {
+      const values = line.split(',');
+      return {
+        source: values[0],
+        recipient: values[1],
+        type: values[2],
+        resource: values[3],
+        utilization: values[4],
+        bucket: values[5]
+      };
+    });
+    
+    setGameData(data);
+    
+    // Extract unique options
+    const recipients = [...new Set(data.map(d => d.recipient))];
+    const sources = [...new Set(data.map(d => d.source))];
+    const types = [...new Set(data.map(d => d.type))];
+    const resources = [...new Set(data.map(d => d.resource))];
+    
+    setDrumOptions({ recipients, types, resources, sources });
+  }, []);
+
+  // Sound effects
+  const playSound = (type) => {
+    if (!soundEnabled) return;
+    
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = audioContext.createOscillator();
+    const gainNode = audioContext.createGain();
+    
+    oscillator.connect(gainNode);
+    gainNode.connect(audioContext.destination);
+    
+    if (type === 'swipe') {
+      oscillator.frequency.value = 400;
+      gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.1);
+    } else if (type === 'select') {
+      oscillator.frequency.value = 600;
+      gainNode.gain.setValueAtTime(0.15, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.15);
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.15);
+    } else if (type === 'correct') {
+      [262, 330, 392, 523].forEach((freq, i) => {
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.2, audioContext.currentTime + i * 0.1);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + i * 0.1 + 0.3);
+        osc.start(audioContext.currentTime + i * 0.1);
+        osc.stop(audioContext.currentTime + i * 0.1 + 0.3);
+      });
+    } else if (type === 'incorrect') {
+      oscillator.frequency.value = 150;
+      gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.3);
+    }
+  };
+
+  // Get icon for item
+  const getIcon = (category, item) => {
+    if (category === 'source') {
+      if (item.includes('Participant')) return '👤';
+      if (item.includes('SHG')) return '👥';
+      if (item.includes('FOAB')) return '🏪';
+      if (item.includes('Govt')) return '🏛️';
+      if (item.includes('NGO')) return '🤝';
+      if (item.includes('Bank')) return '🏦';
+      if (item.includes('Donor')) return '💝';
+      if (item.includes('Organization')) return '🏢';
+      if (item.includes('assisted')) return '🤲';
+      return '📋';
+    } else if (category === 'type') {
+      if (item.includes('Financial') || item.includes('Fund')) return '💰';
+      if (item.includes('Animal')) return '🐄';
+      if (item.includes('Agriculture')) return '🌾';
+      if (item.includes('Knowledge')) return '📚';
+      if (item.includes('Loan')) return '💵';
+      if (item.includes('Savings')) return '🏦';
+      if (item.includes('Free')) return '🎁';
+      if (item.includes('Subsidy')) return '💳';
+      if (item.includes('Investment')) return '📈';
+      return '📦';
+    } else if (category === 'resource') {
+      if (item.includes('Cash')) return '💵';
+      if (item.includes('Cheque')) return '💳';
+      if (item.includes('Animal')) return '🐄';
+      if (item.includes('Seeds') || item.includes('Saplings')) return '🌱';
+      if (item.includes('Machinery')) return '🚜';
+      if (item.includes('Training')) return '👨‍🏫';
+      if (item.includes('loan')) return '💰';
+      if (item.includes('Building')) return '🏗️';
+      if (item.includes('Road')) return '🛣️';
+      if (item.includes('Capital')) return '📈';
+      if (item.includes('Deposits')) return '🏦';
+      return '📋';
+    } else if (category === 'recipient') {
+      if (item.includes('Participant')) return '👤';
+      if (item.includes('SHG')) return '👥';
+      if (item.includes('FOAB')) return '🏪';
+      if (item.includes('Community')) return '🏘️';
+      if (item.includes('Member')) return '👤';
+      if (item.includes('Bank')) return '🏦';
+      return '📋';
+    }
+    return '📋';
+  };
+
+  // Bucket colors
+  const bucketColors = {
+    'Bucket 1': { bg: 'bg-blue-500', text: 'text-blue-900', border: 'border-blue-600' },
+    'Bucket 2': { bg: 'bg-red-500', text: 'text-red-900', border: 'border-red-600' },
+    'Bucket 3': { bg: 'bg-yellow-500', text: 'text-yellow-900', border: 'border-yellow-600' },
+    'Bucket 4': { bg: 'bg-green-500', text: 'text-green-900', border: 'border-green-600' }
+  };
+
+  // Get filtered options for cascading
+  const getFilteredTypes = () => {
+    if (!selectedSource) return [];
+    return [...new Set(gameData.filter(d => d.source === selectedSource).map(d => d.type))];
+  };
+
+  const getFilteredResources = () => {
+    if (!selectedSource || !selectedType) return [];
+    return [...new Set(gameData.filter(d => 
+      d.source === selectedSource && d.type === selectedType
+    ).map(d => d.resource))];
+  };
+
+  const getFilteredRecipients = () => {
+    if (!selectedSource || !selectedType || !selectedResource) return [];
+    return [...new Set(gameData.filter(d => 
+      d.source === selectedSource && 
+      d.type === selectedType && 
+      d.resource === selectedResource
+    ).map(d => d.recipient))];
+  };
+
+  // Handle card selection
+  const handleSourceSelect = (source) => {
+    playSound('select');
+    setSelectedSource(source);
+    setSelectedType(null);
+    setSelectedResource(null);
+    setSelectedRecipient(null);
+    setShowResult(false);
+    setTypeIndex(0);
+    setResourceIndex(0);
+    setRecipientIndex(0);
+  };
+
+  const handleTypeSelect = (type) => {
+    playSound('select');
+    setSelectedType(type);
+    setSelectedResource(null);
+    setSelectedRecipient(null);
+    setShowResult(false);
+    setResourceIndex(0);
+    setRecipientIndex(0);
+  };
+
+  const handleResourceSelect = (resource) => {
+    playSound('select');
+    setSelectedResource(resource);
+    setSelectedRecipient(null);
+    setShowResult(false);
+    setRecipientIndex(0);
+  };
+
+  const handleRecipientSelect = (recipient) => {
+    playSound('select');
+    setSelectedRecipient(recipient);
+    
+    // Find the bucket
+    const match = gameData.find(d => 
+      d.source === selectedSource &&
+      d.type === selectedType &&
+      d.resource === selectedResource &&
+      d.recipient === recipient
+    );
+    if (match) {
+      setResultBucket(match.bucket);
+      setShowResult(true);
+    }
+  };
+
+  // Start new scenario for PLAY mode
+  const startNewScenario = () => {
+    const randomScenario = gameData[Math.floor(Math.random() * gameData.length)];
+    setCurrentScenario(randomScenario);
+    setSelectedBucket(null);
+    setShowFeedback(false);
+  };
+
+  // Handle bucket selection in PLAY mode
+  const handleBucketSelect = (bucket) => {
+    setSelectedBucket(bucket);
+    const correct = currentScenario.bucket === bucket;
+    setIsCorrect(correct);
+    setShowFeedback(true);
+    
+    if (correct) {
+      playSound('correct');
+      setScore(score + 1);
+    } else {
+      playSound('incorrect');
+    }
+    setTotal(total + 1);
+  };
+
+  // Reset KNOW mode
+  const resetKnowMode = () => {
+    setSelectedSource(null);
+    setSelectedType(null);
+    setSelectedResource(null);
+    setSelectedRecipient(null);
+    setShowResult(false);
+    setResultBucket(null);
+    setSourceIndex(0);
+    setTypeIndex(0);
+    setResourceIndex(0);
+    setRecipientIndex(0);
+  };
+
+  // Card Carousel Component
+  const CardCarousel = ({ options, selectedValue, onSelect, label, disabled, currentIndex, setCurrentIndex }) => {
+    const canGoPrev = currentIndex > 0;
+    const canGoNext = currentIndex < options.length - 1;
+
+    const handlePrev = () => {
+      if (canGoPrev) {
+        playSound('swipe');
+        setCurrentIndex(currentIndex - 1);
+      }
+    };
+
+    const handleNext = () => {
+      if (canGoNext) {
+        playSound('swipe');
+        setCurrentIndex(currentIndex + 1);
+      }
+    };
+
+    const handleCardClick = () => {
+      if (!disabled && options.length > 0) {
+        onSelect(options[currentIndex]);
+      }
+    };
+
+    return (
+      <div className="mb-6">
+        <h3 className="text-center text-3xl font-bold mb-3 text-gray-800">{label}</h3>
+        
+        <div className={`relative ${disabled ? 'opacity-50 pointer-events-none' : ''}`}>
+          {/* Navigation buttons */}
+          <button
+            onClick={handlePrev}
+            disabled={!canGoPrev || disabled}
+            className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg ${
+              canGoPrev && !disabled ? 'hover:bg-gray-100' : 'opacity-30 cursor-not-allowed'
+            }`}
+          >
+            <ChevronLeft size={24} />
+          </button>
+
+          <button
+            onClick={handleNext}
+            disabled={!canGoNext || disabled}
+            className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg ${
+              canGoNext && !disabled ? 'hover:bg-gray-100' : 'opacity-30 cursor-not-allowed'
+            }`}
+          >
+            <ChevronRight size={24} />
+          </button>
+
+          {/* Card display */}
+          <div className="flex justify-center items-center px-12">
+            {options.length === 0 ? (
+              <div className="bg-gray-200 rounded-2xl p-8 w-full max-w-sm h-40 flex items-center justify-center">
+                <p className="text-gray-500 text-center text-lg">Select previous option first</p>
+              </div>
+            ) : (
+              <div
+                onClick={handleCardClick}
+                className="bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl p-6 w-full max-w-sm h-40 flex flex-col items-center justify-center shadow-2xl transform transition-all cursor-pointer hover:scale-105"
+              >
+                <div className="text-5xl mb-2">
+                  {getIcon(label.toLowerCase().split(' ')[1] || label.toLowerCase(), options[currentIndex])}
+                </div>
+                <p className="text-white font-bold text-center text-lg">
+                  {options[currentIndex]}
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Progress indicator */}
+          {options.length > 0 && (
+            <div className="text-center mt-3 text-sm text-gray-600">
+              {currentIndex + 1} / {options.length}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  // Main menu
+  if (gameMode === 'menu') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 p-4 flex flex-col items-center justify-center">
+        <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full">
+          <h1 className="text-4xl font-bold text-center mb-4 text-purple-800">
+            🎰 Leveraging Resources
+          </h1>
+          <p className="text-center text-gray-600 mb-8">
+            Learn about LR buckets through an interactive game!
+          </p>
+          
+          <div className="space-y-4">
+            <button
+              onClick={() => {
+                setGameMode('know');
+                resetKnowMode();
+              }}
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition hover:scale-105 flex items-center justify-center gap-2"
+            >
+              <Book size={24} />
+              <div className="text-center">
+                <div>KNOW MODE</div>
+                <div className="text-xs font-normal">Learn by exploring</div>
+              </div>
+            </button>
+            
+            <button
+              onClick={() => {
+                setGameMode('play');
+                startNewScenario();
+              }}
+              className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition hover:scale-105 flex items-center justify-center gap-2"
+            >
+              <Target size={24} />
+              <div className="text-center">
+                <div>PLAY MODE</div>
+                <div className="text-xs font-normal">Test your knowledge</div>
+              </div>
+            </button>
+          </div>
+          
+          <button
+            onClick={() => setSoundEnabled(!soundEnabled)}
+            className="mt-6 w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg flex items-center justify-center gap-2"
+          >
+            {soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
+            Sound: {soundEnabled ? 'ON' : 'OFF'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // KNOW mode
+  if (gameMode === 'know') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-400 p-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-2xl p-6 mb-4">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-bold text-blue-800">📚 KNOW MODE</h2>
+              <button
+                onClick={() => setGameMode('menu')}
+                className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg"
+              >
+                Back
+              </button>
+            </div>
+            <p className="text-sm text-gray-600">Swipe through cards and select options to explore scenarios</p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl p-6 mb-4">
+            <CardCarousel
+              label="Step 1: Who Gives?"
+              options={drumOptions.sources}
+              selectedValue={selectedSource}
+              onSelect={handleSourceSelect}
+              disabled={false}
+              currentIndex={sourceIndex}
+              setCurrentIndex={setSourceIndex}
+            />
+
+            <CardCarousel
+              label="Step 2: What Type?"
+              options={getFilteredTypes()}
+              selectedValue={selectedType}
+              onSelect={handleTypeSelect}
+              disabled={!selectedSource}
+              currentIndex={typeIndex}
+              setCurrentIndex={setTypeIndex}
+            />
+
+            <CardCarousel
+              label="Step 3: What Resource?"
+              options={getFilteredResources()}
+              selectedValue={selectedResource}
+              onSelect={handleResourceSelect}
+              disabled={!selectedType}
+              currentIndex={resourceIndex}
+              setCurrentIndex={setResourceIndex}
+            />
+
+            <CardCarousel
+              label="Step 4: Who Receives?"
+              options={getFilteredRecipients()}
+              selectedValue={selectedRecipient}
+              onSelect={handleRecipientSelect}
+              disabled={!selectedResource}
+              currentIndex={recipientIndex}
+              setCurrentIndex={setRecipientIndex}
+            />
+          </div>
+
+          {selectedSource && selectedType && selectedResource && selectedRecipient && (
+            <div className="bg-white rounded-3xl shadow-2xl p-6">
+              <div className="text-center mb-4">
+                <p className="text-lg font-semibold text-gray-700">
+                  <span className="text-orange-600">{selectedSource}</span> gave{' '}
+                  <span className="text-purple-600">{selectedType}</span> support in form of{' '}
+                  <span className="text-green-600">{selectedResource}</span> to{' '}
+                  <span className="text-blue-600">{selectedRecipient}</span>
+                </p>
+              </div>
+
+              {showResult && resultBucket && (
+                <div className="text-center">
+                  <p className="text-xl font-bold mb-4">This contributes to:</p>
+                  <div className={`inline-block ${bucketColors[resultBucket].bg} relative`}
+                       style={{
+                         width: '160px',
+                         height: '180px',
+                         borderRadius: '0 0 40% 40%',
+                         clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)',
+                         boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                       }}>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center pt-8">
+                      <div className="text-6xl font-bold text-white mb-2">
+                        {resultBucket.replace('Bucket ', '')}
+                      </div>
+                      <div className="text-white font-semibold text-sm px-2">
+                        {resultBucket === 'Bucket 1' && 'Passing the Gift'}
+                        {resultBucket === 'Bucket 2' && 'Cash/In-kind'}
+                        {resultBucket === 'Bucket 3' && 'Heifer Loans'}
+                        {resultBucket === 'Bucket 4' && 'Bank Loans'}
+                      </div>
+                    </div>
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-20 h-8 border-4 border-white rounded-t-full" 
+                         style={{ borderBottom: 'none', backgroundColor: bucketColors[resultBucket].bg.replace('bg-', '') }}></div>
+                  </div>
+                  
+                  <button
+                    onClick={resetKnowMode}
+                    className="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg"
+                  >
+                    Try Another Scenario
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // PLAY mode
+  if (gameMode === 'play') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-green-400 via-emerald-400 to-teal-400 p-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-2xl p-6 mb-4">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl font-bold text-green-800">🎯 PLAY MODE</h2>
+              <div className="flex gap-4 items-center">
+                <div className="text-right">
+                  <div className="text-sm text-gray-600">Score</div>
+                  <div className="text-xl font-bold text-green-600">
+                    {score} / {total}
+                  </div>
+                </div>
+                <button
+                  onClick={() => setGameMode('menu')}
+                  className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {currentScenario && (
+            <>
+              <div className="bg-white rounded-3xl shadow-2xl p-8 mb-4">
+                <h3 className="text-xl font-bold text-center mb-6 text-gray-800">
+                  Select the correct bucket for this scenario:
+                </h3>
+                <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl p-6 text-center">
+                  <p className="text-lg font-semibold text-gray-700">
+                    <span className="text-orange-600">{currentScenario.source}</span> gave{' '}
+                    <span className="text-purple-600">{currentScenario.type}</span> support in form of{' '}
+                    <span className="text-green-600">{currentScenario.resource}</span> to{' '}
+                    <span className="text-blue-600">{currentScenario.recipient}</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                {['Bucket 1', 'Bucket 2', 'Bucket 3', 'Bucket 4'].map((bucket) => (
+                  <button
+                    key={bucket}
+                    onClick={() => !showFeedback && handleBucketSelect(bucket)}
+                    disabled={showFeedback}
+                    className={`relative transform transition hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${
+                      showFeedback && selectedBucket === bucket
+                        ? isCorrect
+                          ? 'ring-8 ring-green-400'
+                          : 'ring-8 ring-red-400'
+                        : ''
+                    }`}
+                    style={{
+                      width: '100%',
+                      height: '200px'
+                    }}
+                  >
+                    <div className={`${bucketColors[bucket].bg} relative w-full h-full`}
+                         style={{
+                           borderRadius: '0 0 40% 40%',
+                           clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)',
+                           boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                         }}>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center pt-8">
+                        <div className="text-5xl font-bold text-white mb-2">
+                          {bucket.replace('Bucket ', '')}
+                        </div>
+                        <div className="text-white font-semibold text-sm px-2">
+                          {bucket === 'Bucket 1' && 'Passing the Gift'}
+                          {bucket === 'Bucket 2' && 'Cash/In-kind'}
+                          {bucket === 'Bucket 3' && 'Heifer Loans'}
+                          {bucket === 'Bucket 4' && 'Bank Loans'}
+                        </div>
+                      </div>
+                      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-6 border-4 border-white rounded-t-full" 
+                           style={{ borderBottom: 'none', backgroundColor: bucketColors[bucket].bg.replace('bg-', '') }}></div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+
+              {showFeedback && (
+                <div className={`rounded-3xl shadow-2xl p-6 ${isCorrect ? 'bg-green-100' : 'bg-red-100'}`}>
+                  <div className="text-center">
+                    <div className="text-4xl mb-2">{isCorrect ? '🎉' : '❌'}</div>
+                    <h3 className="text-2xl font-bold mb-2">
+                      {isCorrect ? 'Correct!' : 'Not Quite!'}
+                    </h3>
+                    {!isCorrect && (
+                      <p className="text-lg mb-4">
+                        The correct answer is <span className="font-bold text-green-600">{currentScenario.bucket}</span>
+                      </p>
+                    )}
+                    <button
+                      onClick={startNewScenario}
+                      className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mt-4"
+                    >
+                      Next Question
+                    </button>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+};
+
+export default LRGame;
