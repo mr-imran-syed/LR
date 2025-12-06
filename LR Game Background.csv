@@ -1,0 +1,487 @@
+﻿Source,Recipient,type,resource,utilization,Applicable Buckets
+Project Participant,Project Participant,Financial,Cash,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Cheque,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Online Transfer,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Stocks/ Bonds,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,"Birds, Bees",Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,"Cow, Buffalo",Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,"Goat, Sheep",Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Other Animals,Used by recipient,Bucket 1
+Project Participant,Project Participant,Animal,Diary,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,"Fertilizer, Compost, Manure",Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,"Seeds, Saplings",Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Fodder Forrage,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,Other farm inputs,Used by recipient,Bucket 1
+Project Participant,Project Participant,Agriculture,"Farm Machinery, equipments",Used by recipient,Bucket 1
+Project Participant,Project Participant,Other,"Non-Farm Machinery, Equipments",Used by recipient,Bucket 1
+Project Participant,Project Participant,Knowledge,Agri related Training and Knowledge Transfer,Used by recipient,Bucket 1
+Project Participant,Project Participant,Knowledge,Other skill development,Used by recipient,Bucket 1
+Project Participant,Project Participant,Financial,Cash,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Financial,Cheque,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Financial,Online Transfer,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Financial,Stocks/ Bonds,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Animal,"Birds, Bees",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Animal,"Cow, Buffalo",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Animal,"Goat, Sheep",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Animal,Other Animals,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Animal,Diary,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Agriculture,"Fertilizer, Compost, Manure",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Agriculture,"Seeds, Saplings",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Agriculture,Fodder Forrage,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Agriculture,Other farm inputs,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Agriculture,"Farm Machinery, equipments",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Other,"Non-Farm Machinery, Equipments",Shared with other participants,Bucket 1
+Project Participant,Project Participant,Knowledge,Agri related Training and Knowledge Transfer,Shared with other participants,Bucket 1
+Project Participant,Project Participant,Knowledge,Other skill development,Shared with other participants,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Financial,Cash,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Financial,Cheque,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Financial,Online Transfer,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Financial,Stocks/ Bonds,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,"Birds, Bees",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,"Cow, Buffalo",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,"Goat, Sheep",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,Other Animals,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Animal,Diary,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Agriculture,"Fertilizer, Compost, Manure",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Agriculture,"Seeds, Saplings",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Agriculture,Fodder Forrage,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Agriculture,Other farm inputs,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Agriculture,"Farm Machinery, equipments",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Other,"Non-Farm Machinery, Equipments",Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Knowledge,Agri related Training and Knowledge Transfer,Shared with other FOAB,Bucket 1
+Heifer Supported FOAB,Heifer Supported FOAB,Knowledge,Other skill development,Shared with other FOAB,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Financial,Cash,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Financial,Cheque,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Financial,Online Transfer,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Financial,Stocks/ Bonds,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,"Birds, Bees",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,"Cow, Buffalo",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,"Goat, Sheep",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,Other Animals,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Animal,Diary,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Agriculture,"Fertilizer, Compost, Manure",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Agriculture,"Seeds, Saplings",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Agriculture,Fodder Forrage,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Agriculture,Other farm inputs,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Agriculture,"Farm Machinery, equipments",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Other,"Non-Farm Machinery, Equipments",Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Knowledge,Agri related Training and Knowledge Transfer,Shared with other SHG,Bucket 1
+Heifer Supported SHG,Heifer Supported SHG,Knowledge,Other skill development,Shared with other SHG,Bucket 1
+Individual Donor/Philanthrophist,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Fund,Cash,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Animals,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+"Local, State, National Govt",Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+NGO,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+NGO,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+NGO,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+NGO,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+NGO,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+NGO,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+NGO,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+NGO,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+NGO,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+NGO,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Philanthropic Entity,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Private Organizatioin,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Social Enterprise,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Other Entities,Project Participant,Fund,Cash,Used by recipient,Bucket 2
+Other Entities,Project Participant,Fund,Cheque,Used by recipient,Bucket 2
+Other Entities,Project Participant,Fund,Online Transfer,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Agri Raw materials,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Animals,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Donation of land/ building,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Machinery/ Equipment,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Office supplies,Used by recipient,Bucket 2
+Other Entities,Project Participant,For Free,Vehicles,Used by recipient,Bucket 2
+Other Entities,Project Participant,Person days,Staff Time,Used by recipient,Bucket 2
+Other Entities,Project Participant,Subsidy/ Discount,Agri related goods/ services,Used by recipient,Bucket 2
+Other Entities,Project Participant,Subsidy/ Discount,Office supplies,Used by recipient,Bucket 2
+Other Entities,Project Participant,Subsidy/ Discount,on rent/ purchase of land,Used by recipient,Bucket 2
+Other Entities,Project Participant,Subsidy/ Discount,equipment and machinery,Used by recipient,Bucket 2
+Other Entities,Project Participant,Free/ Discount/ Subsidy,on project promoted activiites,Used by recipient,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+"Local, State, National Govt",Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Agri Raw materials,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Animals,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Donation of land/ building,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Office supplies,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free,Vehicles,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+NGO,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Philanthropic Entity,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Private Organizatioin,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Social Enterprise,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Fund,Cash,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Fund,Cheque,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Fund,Online Transfer,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Agri Raw materials,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Animals,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Donation of land/ building,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Machinery/ Equipment,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Office supplies,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,For Free,Vehicles,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Person days,Staff Time,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Subsidy/ Discount,Agri related goods/ services,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Subsidy/ Discount,Office supplies,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Subsidy/ Discount,on rent/ purchase of land,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Subsidy/ Discount,equipment and machinery,Used by the FOAB,Bucket 2
+Other Entities,Project Supported FOAB,Free/ Discount/ Subsidy,on project promoted activiites,Used by the FOAB,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Individual Donor/Philanthrophist,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+"Local, State, National Govt",Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Non-Heifer Cooperatives or Groups,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+NGO,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Philanthropic Entity,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Private Organizatioin,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Social Enterprise,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Fund,Cash,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Fund,Cheque,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Fund,Online Transfer,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Agri Raw materials,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Animals,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Donation of land/ building,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Machinery/ Equipment,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Office supplies,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,For Free,Vehicles,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Person days,Staff Time,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Subsidy/ Discount,Agri related goods/ services,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Subsidy/ Discount,Office supplies,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Subsidy/ Discount,on rent/ purchase of land,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Subsidy/ Discount,equipment and machinery,Used by the SHG,Bucket 2
+Other Entities,Project Supported SHG,Free/ Discount/ Subsidy,on project promoted activiites,Used by the SHG,Bucket 2
+Heifer assisted SHG,Project Supported SHG,Investment,Capital,Used by the SHG,Bucket 3
+Heifer assisted SHG,Project Supported SHG,Investment,Fund,Used by the SHG,Bucket 3
+Heifer assisted SHG,Project Supported SHG,Investment,Business ventures,Used by the SHG,Bucket 3
+Heifer assisted SHG,Project Supported SHG,Investment,Assets,Used by the SHG,Bucket 3
+Heifer assisted SHG,SHG Members,Savings,as cash,Utilized by the SHG Members,Bucket 3
+Heifer assisted SHG,SHG Members,Savings,in Bank,Utilized by the SHG Members,Bucket 3
+Heifer assisted SHG,Community,Loan,Improved market access,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,Construction of roads,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,construction of buildings,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,purchase of transport vehicles,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,improved water service,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,improved environment,Benefit to the Community,Bucket 3
+Heifer assisted SHG,Community,Loan,other improvements,Benefit to the Community,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Informal Agriculture loan,Utilized by the SHG Members,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Informal Animal rearing loan,Utilized by the SHG Members,Bucket 3
+Heifer assisted SHG,SHG Member,Personal Loan,Informal personal loan,Utilized by the SHG Members,Bucket 3
+Heifer assisted FOAB,Project Supported FOAB,Investment,Capital,Used by the FOAB,Bucket 3
+Heifer assisted FOAB,Project Supported FOAB,Investment,Fund,Used by the FOAB,Bucket 3
+Heifer assisted FOAB,Project Supported FOAB,Investment,Business ventures,Used by the FOAB,Bucket 3
+Heifer assisted FOAB,Project Supported FOAB,Investment,Assets,Used by the FOAB,Bucket 3
+Heifer assisted FOAB,FOAB Members,Savings,as cash,Utilized by the FOAB Members,Bucket 3
+Heifer assisted FOAB,FOAB Members,Savings,Savings account,Utilized by the FOAB Members,Bucket 3
+Heifer assisted FOAB,Community,Loan,Improved market access,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,Construction of roads,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,construction of buildings,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,purchase of transport vehicles,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,improved water service,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,improved environment,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,Community,Loan,other improvements,Benefit to the Community,Bucket 3
+Heifer assisted FOAB,FOAB Member,Personal Loan,Informal Agriculture loan,Utilized by the FOAB Members,Bucket 3
+Heifer assisted FOAB,FOAB Member,Personal Loan,Informal Animal rearing loan,Utilized by the FOAB Members,Bucket 3
+Heifer assisted FOAB,FOAB Member,Personal Loan,Informal personal loan,Utilized by the FOAB Members,Bucket 3
+Heifer assisted FOAB,Bank/ Financial Institution,Investment,Fixed Deposits/ Recurring Deposits,Used by the FOAB,Bucket 4
+Heifer assisted FOAB,Bank/ Financial Institution,Investment,"Bonds, Stocks, Shares",Used by the FOAB,Bucket 4
+Heifer assisted FOAB,Bank/ Financial Institution,Savings,Savings/ Cash,Utilized by the FOAB Members,Bucket 4
+Bank/ Financial Institution,Community,Loan,Improved market access,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,Construction of roads,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,construction of buildings,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,purchase of transport vehicles,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,improved water service,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,improved environment,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,other improvements,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,FOAB Member,Personal Loan,Formal Agriculture loan,Utilized by the FOAB Members,Bucket 4
+Bank/ Financial Institution,FOAB Member,Personal Loan,Formal Animal rearing loan,Utilized by the FOAB Members,Bucket 4
+Bank/ Financial Institution,FOAB Member,Personal Loan,Formal personal loan,Utilized by the FOAB Members,Bucket 4
+Heifer assisted SHG,Bank/ Financial Institution,Investment,Fixed Deposits/ Recurring Deposits,Used by the SHG,Bucket 4
+Heifer assisted SHG,Bank/ Financial Institution,Investment,"Bonds, Stocks, Shares",Used by the SHG,Bucket 4
+Heifer assisted SHG,Bank/ Financial Institution,Savings,Savings account,Utilized by the SHG Members,Bucket 4
+Bank/ Financial Institution,Community,Loan,Improved market access,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,Construction of roads,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,construction of buildings,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,purchase of transport vehicles,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,improved water service,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,improved environment,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,Community,Loan,other improvements,Benefit to the Community,Bucket 4
+Bank/ Financial Institution,SHG Member,Personal Loan,Formal Agriculture loan,Utilized by the SHG Members,Bucket 4
+Bank/ Financial Institution,SHG Member,Personal Loan,Formal Animal rearing loan,Utilized by the SHG Members,Bucket 4
+Bank/ Financial Institution,SHG Member,Personal Loan,Formal personal loan,Utilized by the SHG Members,Bucket 4
